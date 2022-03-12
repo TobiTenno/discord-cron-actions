@@ -1,0 +1,28 @@
+{
+  "name": "discord-cron-actions",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Clear channel(s) on predefined cron times",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TobiTenno/discord-cron-actions.git"
+  },
+  "author": "tobitenno",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tobitenno/channel-clear/issues"
+  },
+  "homepage": "https://github.com/tobitenno/channel-clear#readme",
+  "devDependencies": {
+    "cron": "^1.8.2",
+    "discord.js": "^13.6.0",
+    "nodemon": "^2.0.15"
+  },
+  "type": "module"
+}
