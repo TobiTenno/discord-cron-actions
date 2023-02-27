@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  discord-cron-actions:
+    container_name: discord-cron-actions
+    image: discord-cron-actions:latest
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - type: bind
+        source: ./config
+        target: /app/config
+        read_only: true
+    environment:
+      TOKEN: # Token!

@@ -2,9 +2,12 @@ import { Client, Intents } from 'discord.js';
 import { CronJob } from 'cron';
 
 // until assertions work
-import { createRequire } from "module";
+import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
-const crons = require("./crons.json");
+let crons = require('./crons.json');
+if (!crons) {
+  crons = require('./config/crons.json')
+}
 
 const client = new Client({
   intents: [
