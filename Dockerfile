@@ -7,6 +7,7 @@ RUN npm -v
 RUN npm install
 
 FROM node:gallium-alpine as release
+LABEL org.opencontainers.image.source = "https://github.com/TobiTenno/discord-cron-actions"
 
 COPY --from=base --chown=node:node /app /app
 WORKDIR /app
